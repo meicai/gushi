@@ -36,8 +36,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/meicai/gushi.git
-cd gushi
+git clone https://github.com/meicai/inkverse.git
+cd inkverse
 
 # 安装依赖
 npm install
@@ -62,7 +62,7 @@ npx vite build
 ## 📁 项目结构
 
 ```
-gushi/
+inkverse/
 ├── index.html              # 入口页面
 ├── main.js                 # 主程序
 ├── style.css               # 设计系统
