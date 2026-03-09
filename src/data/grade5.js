@@ -18,7 +18,7 @@ export const grade5Poems = [
     ],
     translation: "我家洗砚台旁边有棵梅树，朵朵花开好像是用淡墨画成的。不需要别人来称赞颜色好不好，只希望留下清香之气充满天地之间。",
     background: 'study',
-    tags: ['春景', '冬雪', '思乡'],
+    tags: ['咏物', '品格', '高洁'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade5Poems = [
     ],
     translation: "我原本就知道死后什么都没有了，只是悲伤看不到国家统一。当朝廷的军队收复中原的那一天，在家里祭祀祖先的时候不要忘了告诉我啊。",
     background: 'study',
-    tags: ['思乡', '童趣', '爱国'],
+    tags: ['爱国', '家国', '遗愿'],
     difficulty: 1,
   },
   {

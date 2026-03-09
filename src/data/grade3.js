@@ -18,7 +18,7 @@ export const grade3Poems = [
     ],
     translation: "慈爱的母亲手中拿着针线，为即将远行的儿子缝制衣裳。临行前一针一针密密地缝着，担心儿子很晚很晚才能回来。",
     background: 'study',
-    tags: ['送别', '边塞', '童趣'],
+    tags: ['亲情', '母爱', '思亲'],
     difficulty: 1,
   },
   {
@@ -306,7 +306,7 @@ export const grade3Poems = [
     ],
     translation: "清明节这天下着细雨，路上行走的人好像失了魂魄一样伤感。请问哪里有酒家可以歇脚？牧童远远地指向杏花深处的村庄。",
     background: 'spring',
-    tags: ['春景', '思乡', '送别'],
+    tags: ['节日', '伤感', '春景'],
     difficulty: 1,
   },
   {

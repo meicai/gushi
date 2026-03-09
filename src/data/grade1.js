@@ -180,7 +180,7 @@ export const grade1Poems = [
     ],
     translation: "农历二月草木生长莺鸟飞翔，堤边的杨柳飘摇在如烟的春色中。小孩子放学回来得早，赶快趁着东风放起了风筝。",
     background: 'spring',
-    tags: ['春景', '秋思', '边塞'],
+    tags: ['春景', '田园', '童趣'],
     difficulty: 1,
   },
   {
@@ -216,7 +216,7 @@ export const grade1Poems = [
     ],
     translation: "泉眼悄悄无声是因爱惜细细的水流，树荫映在水面是因为喜欢晴天柔和的风光。小荷叶才露出水面尖尖的角，早有一只蜻蜓站在了上头。",
     background: 'summer',
-    tags: ['夏日', '山水', '边塞'],
+    tags: ['夏日', '咏物', '自然'],
     difficulty: 1,
   },
   {

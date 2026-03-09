@@ -127,7 +127,7 @@ export const grade4Poems = [
     ],
     translation: "渭城早晨的细雨湿润了路上的灰尘，客舍旁的柳树显得更加青翠。劝你再多喝一杯酒，向西出了阳关就再也没有老朋友了。",
     background: 'farewell',
-    tags: ['春景', '思乡', '送别'],
+    tags: ['送别', '友情', '边塞'],
     difficulty: 1,
   },
   {
@@ -181,7 +181,7 @@ export const grade4Poems = [
     ],
     translation: "所有的山上都看不见鸟的踪影，所有的小路上都没有人的足迹。只有一条小船上一位穿着蓑衣戴着斗笠的老翁，独自在寒冷的江面上钓鱼。",
     background: 'winter',
-    tags: ['冬雪', '山水', '动物'],
+    tags: ['冬雪', '孤寂', '隐逸'],
     difficulty: 1,
   },
   {

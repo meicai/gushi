@@ -54,7 +54,7 @@ export const preschoolPoems = [
     ],
     translation: "青海湖上的浓云遮暗了雪山，在孤城上远远望着玉门关。在黄沙中经历百战铠甲都磨穿了，不攻破楼兰誓不回还。",
     background: 'frontier',
-    tags: ['冬雪', '山水', '送别'],
+    tags: ['边塞', '战争', '豪情'],
     difficulty: 1,
   },
   {
@@ -144,7 +144,7 @@ export const preschoolPoems = [
     ],
     translation: "头上的红冠不用裁剪就天然长成，满身雪白地走过来。平时不敢轻易出声，一叫就让千家万户都打开了门。",
     background: 'birds',
-    tags: ['冬雪', '思乡', '边塞'],
+    tags: ['咏物', '动物', '励志'],
     difficulty: 1,
   },
   {
