@@ -18,7 +18,7 @@ export const grade2Poems = [
     ],
     translation: "沿着弯弯曲曲的小路上山，白云升腾的地方还住着几户人家。停下车来是因为喜欢这傍晚的枫林，经过霜打的枫叶比二月的花还要红。",
     background: 'autumn',
-    tags: [],
+    tags: ['春景', '秋思', '冬雪'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade2Poems = [
     ],
     translation: "荷花凋谢了连那擎雨的荷叶也枯了，菊花虽已残败但还有傲霜的枝条。一年中最好的景致你一定要记住，就是橙子金黄、橘子翠绿的秋末好时节。",
     background: 'autumn',
-    tags: [],
+    tags: ['春景', '夏日', '秋思'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const grade2Poems = [
     ],
     translation: "年少时就离开了家乡，到老了才回来。说的还是家乡话，但两鬓的头发已经花白了。小孩子看见我却不认识我，笑着问我是从哪里来的客人。",
     background: 'farewell',
-    tags: [],
+    tags: ['春景', '思乡', '送别'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade2Poems = [
     ],
     translation: "李白坐上小船正要出发，忽然听到岸上有人一边走一边唱歌。桃花潭的水即使有千尺深，也比不上汪伦送我的深情啊。",
     background: 'farewell',
-    tags: [],
+    tags: ['春景', '山水', '送别'],
     difficulty: 1,
   },
   {
@@ -90,7 +90,7 @@ export const grade2Poems = [
     ],
     translation: "原野上的草长得很茂盛，每年都会枯萎和重新生长。野火也烧不完它，春风一吹它又重新长了出来。",
     background: 'grassland',
-    tags: [],
+    tags: ['春景', '田园'],
     difficulty: 1,
   },
   {
@@ -108,7 +108,7 @@ export const grade2Poems = [
     ],
     translation: "稀疏的篱笆旁一条小路伸向远方，树上的新芽还没有长成浓密的树荫。小孩子急忙去追赶黄色的蝴蝶，蝴蝶却飞入菜花丛中，再也找不到了。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '童趣'],
     difficulty: 1,
   },
   {
@@ -126,7 +126,7 @@ export const grade2Poems = [
     ],
     translation: "阳光照着香炉峰升起紫色的烟雾，远远望去瀑布好像挂在山前的河流。飞一样流下来的水有三千尺那么长，让人以为是银河从天上落了下来。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -144,7 +144,7 @@ export const grade2Poems = [
     ],
     translation: "两只黄鹂在翠绿的柳枝间鸣叫，一行白鹭飞向蓝蓝的天空。窗户里可以看到西岭千年不化的积雪，门前停泊着从东吴万里开来的船只。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '秋思', '冬雪'],
     difficulty: 1,
   },
   {
@@ -162,7 +162,7 @@ export const grade2Poems = [
     ],
     translation: "依旧是秦汉时的明月和边关，远征万里的将士们还没有回来。只要有像飞将军李广那样的名将在，就不会让敌人的战马越过阴山。",
     background: 'frontier',
-    tags: [],
+    tags: ['秋思', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -180,7 +180,7 @@ export const grade2Poems = [
     ],
     translation: "冷雨洒满江面的夜晚来到了吴地，天亮时送别好友只留下楚山孤影。如果洛阳的亲友问起我的近况，就说我的心像玉壶中的冰一样纯洁。",
     background: 'farewell',
-    tags: [],
+    tags: ['冬雪', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -198,7 +198,7 @@ export const grade2Poems = [
     ],
     translation: "空旷的山中看不见人的身影，只能听到人说话的声音。一束夕阳照进幽深的树林里，又映照在绿色的青苔上。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -216,7 +216,7 @@ export const grade2Poems = [
     ],
     translation: "老朋友在黄鹤楼与我告别，在鲜花烂漫的三月去往扬州。孤零零的帆船渐渐远去消失在碧空尽头，只看见长江之水浩浩荡荡地向天边流去。",
     background: 'farewell',
-    tags: [],
+    tags: ['春景', '秋思', '山水'],
     difficulty: 1,
   },
   {
@@ -234,7 +234,7 @@ export const grade2Poems = [
     ],
     translation: "头发蓬乱的小孩正在学习垂钓，侧身坐在莓苔上被草丛遮住了身子。路过的人向他问路，他远远地摆手不回答，怕惊跑了鱼儿。",
     background: 'summer',
-    tags: [],
+    tags: ['春景', '童趣', '哲理'],
     difficulty: 1,
   }
 ];

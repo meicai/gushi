@@ -18,7 +18,7 @@ export const grade5Poems = [
     ],
     translation: "我家洗砚台旁边有棵梅树，朵朵花开好像是用淡墨画成的。不需要别人来称赞颜色好不好，只希望留下清香之气充满天地之间。",
     background: 'study',
-    tags: [],
+    tags: ['春景', '冬雪', '思乡'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade5Poems = [
     ],
     translation: "京口和瓜洲之间只隔一条长江，从京口到钟山也只隔几座山。春风又吹绿了长江南岸，明月什么时候才能照着我回到家乡。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '秋思', '山水'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const grade5Poems = [
     ],
     translation: "三万里长的黄河向东流入大海，五千仞高的华山高耸入云。沦陷区的百姓在敌人的统治下眼泪都流尽了，向南盼望朝廷的军队来解救又过了一年。",
     background: 'frontier',
-    tags: [],
+    tags: ['秋思', '山水', '送别'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade5Poems = [
     ],
     translation: "我原本就知道死后什么都没有了，只是悲伤看不到国家统一。当朝廷的军队收复中原的那一天，在家里祭祀祖先的时候不要忘了告诉我啊。",
     background: 'study',
-    tags: [],
+    tags: ['思乡', '童趣', '爱国'],
     difficulty: 1,
   },
   {
@@ -90,7 +90,7 @@ export const grade5Poems = [
     ],
     translation: "月亮落下去乌鸦啼叫满天都是寒霜，面对着江边的枫树和渔船上的灯火满怀忧愁难以入眠。苏州城外的寒山寺，半夜里敲响的钟声传到了客船上。",
     background: 'moonlight',
-    tags: [],
+    tags: ['秋思', '冬雪', '山水'],
     difficulty: 1,
   },
   {
@@ -110,7 +110,7 @@ export const grade5Poems = [
     ],
     translation: "跋山涉水一路前行，将士们向山海关的方向进发。夜深了营帐中千盏灯还亮着。风雪交加整夜不停，嘈杂的声音打碎了思乡的梦，故乡没有这样的风雪之声啊。",
     background: 'winter',
-    tags: [],
+    tags: ['冬雪', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -128,7 +128,7 @@ export const grade5Poems = [
     ],
     translation: "风和日丽的时候来到泗水边踏青赏春，无边无际的风光焕然一新。谁都可以轻易地认出春天的面貌，到处都是万紫千红百花齐放的春景。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -146,7 +146,7 @@ export const grade5Poems = [
     ],
     translation: "半亩大的方形池塘像一面镜子一样打开，天光和云影一起在水中闪耀浮动。要问那方塘的水为什么这样清澈？是因为有那永不枯竭的源头为它源源不断地输送活水。",
     background: 'study',
-    tags: [],
+    tags: ['山水', '哲理'],
     difficulty: 1,
   },
   {
@@ -164,7 +164,7 @@ export const grade5Poems = [
     ],
     translation: "到底是西湖六月天的景色，风光与其他季节确实不同。碧绿的莲叶无边无际一直延伸到天际，在阳光映照下荷花显得格外艳红。",
     background: 'summer',
-    tags: [],
+    tags: ['春景', '夏日', '秋思'],
     difficulty: 1,
   },
   {
@@ -182,7 +182,7 @@ export const grade5Poems = [
     ],
     translation: "大概是主人爱惜苍苔怕留下我的木屐印迹，轻轻地敲柴门很久也没有人来开。可是满园的春色怎么也关不住，一枝红色的杏花已经探出墙头来了。",
     background: 'spring',
-    tags: [],
+    tags: ['春景'],
     difficulty: 1,
   },
   {
@@ -200,7 +200,7 @@ export const grade5Poems = [
     ],
     translation: "青山之外还是青山，楼阁之外又是楼阁。西湖边的歌舞什么时候才能停下来？暖洋洋的春风把游人吹得醉醺醺的，简直把杭州当成了汴州。",
     background: 'mountains',
-    tags: [],
+    tags: ['春景', '山水', '边塞'],
     difficulty: 1,
   }
 ];

@@ -4,7 +4,7 @@ const CACHE_NAME = 'inkverse-cache-v1';
 const INITIAL_CACHED_RESOURCES = [
   './',
   './index.html',
-  './favicon.ico',
+  './favicon.svg',
 ];
 
 self.addEventListener('install', event => {

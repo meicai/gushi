@@ -11,6 +11,7 @@ const state = {
   currentTab: 'poems',       // 'poems' | 'listen'
   selectedGrade: 'ALL',
   selectedStatuses: new Set(['ALL']),
+  selectedTag: 'ALL',         // 当前选中的标签筛选
   poemStatuses: {},           // { poemId: status }
   settings: {},
   detailPoem: null,           // 当前查看的诗词
@@ -109,6 +110,9 @@ export function getFilteredPoems() {
   }
   if (!state.selectedStatuses.has('ALL')) {
     poems = poems.filter(p => state.selectedStatuses.has(getPoemStatus(p.id)));
+  }
+  if (state.selectedTag && state.selectedTag !== 'ALL') {
+    poems = poems.filter(p => p.tags && p.tags.includes(state.selectedTag));
   }
   return poems;
 }

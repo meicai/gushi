@@ -18,7 +18,7 @@ export const grade4Poems = [
     ],
     translation: "群鸟已经飞得看不见了，一朵孤云也悠闲地飘走了。只有我和敬亭山互相对望，怎么看也看不够。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水', '动物'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade4Poems = [
     ],
     translation: "洞庭湖的水光与秋月交相辉映，湖面上风平浪静就像没有磨过的铜镜。远远望去洞庭湖山水一片翠绿，就像白银盘中放着一只小巧的青螺。",
     background: 'moonlight',
-    tags: [],
+    tags: ['秋思', '山水'],
     difficulty: 1,
   },
   {
@@ -55,7 +55,7 @@ export const grade4Poems = [
     ],
     translation: "江南的风景多么好啊，如画的风景以前就很熟悉。太阳出来后江边的花儿红得胜过火焰，春天来了江水绿得仿佛蓝草。怎能叫人不怀念江南？",
     background: 'mountains',
-    tags: [],
+    tags: ['春景', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -73,7 +73,7 @@ export const grade4Poems = [
     ],
     translation: "山坡原野长满了绿色，河水映着天光白茫茫一片。杜鹃声里细雨如烟。乡村四月里闲着的人很少，刚采完蚕桑就又要插秧了。",
     background: 'pastoral',
-    tags: [],
+    tags: ['秋思', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -91,7 +91,7 @@ export const grade4Poems = [
     ],
     translation: "白天出去种田晚上在家搓麻线，村庄里的男男女女各有各的家务。小孩子虽然不会耕田织布，也在桑树阴下学着种瓜。",
     background: 'pastoral',
-    tags: [],
+    tags: ['思乡', '田园', '童趣'],
     difficulty: 1,
   },
   {
@@ -109,7 +109,7 @@ export const grade4Poems = [
     ],
     translation: "西塞山前白鹭在飞翔，桃花开了河水里鳜鱼正肥。戴着青色的箬笠，穿着绿色的蓑衣，在细风斜雨中钓鱼不想回家。",
     background: 'summer',
-    tags: [],
+    tags: ['春景', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -127,7 +127,7 @@ export const grade4Poems = [
     ],
     translation: "渭城早晨的细雨湿润了路上的灰尘，客舍旁的柳树显得更加青翠。劝你再多喝一杯酒，向西出了阳关就再也没有老朋友了。",
     background: 'farewell',
-    tags: [],
+    tags: ['春景', '思乡', '送别'],
     difficulty: 1,
   },
   {
@@ -145,7 +145,7 @@ export const grade4Poems = [
     ],
     translation: "黄河远远流去好像流到了白云之间，一座孤城耸立在万仞高山之中。何必用羌笛吹奏哀怨的折杨柳呢，春风本来就吹不到玉门关外。",
     background: 'frontier',
-    tags: [],
+    tags: ['春景', '山水'],
     difficulty: 1,
   },
   {
@@ -163,7 +163,7 @@ export const grade4Poems = [
     ],
     translation: "太阳依傍着山峰慢慢落下，黄河向着大海奔流而去。想要看到千里之外的景色，就要再登上一层楼。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -181,7 +181,7 @@ export const grade4Poems = [
     ],
     translation: "所有的山上都看不见鸟的踪影，所有的小路上都没有人的足迹。只有一条小船上一位穿着蓑衣戴着斗笠的老翁，独自在寒冷的江面上钓鱼。",
     background: 'winter',
-    tags: [],
+    tags: ['冬雪', '山水', '动物'],
     difficulty: 1,
   },
   {
@@ -199,7 +199,7 @@ export const grade4Poems = [
     ],
     translation: "千里江南到处莺歌燕舞绿树红花相映，水边的村庄山边的城郭处处酒旗飘扬。南朝留下的那许多座寺庙，多少楼台掩映在朦胧的烟雨之中。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -217,7 +217,7 @@ export const grade4Poems = [
     ],
     translation: "不管是平地还是山尖，凡是花开的地方都被蜜蜂占据了。蜜蜂采尽百花酿成蜂蜜，到底是为谁辛苦为谁酿造甘甜呢？",
     background: 'birds',
-    tags: [],
+    tags: ['春景', '山水'],
     difficulty: 1,
   },
   {
@@ -235,7 +235,7 @@ export const grade4Poems = [
     ],
     translation: "江上来来往往的人们，只知道喜爱鲈鱼的味道鲜美。你看那一叶小小的渔船，在大风大浪中时隐时现多么惊险。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水', '爱国', '隐逸'],
     difficulty: 1,
   },
   {
@@ -253,7 +253,7 @@ export const grade4Poems = [
     ],
     translation: "在噼噼啪啪的爆竹声中又送走了旧的一年，人们迎着和煦的春风畅饮着屠苏酒。千家万户沐浴在初升太阳的光辉中，总是用新桃符换下旧桃符。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '思乡', '隐逸'],
     difficulty: 1,
   },
   {
@@ -271,7 +271,7 @@ export const grade4Poems = [
     ],
     translation: "从正面看庐山是连绵的山岭，从侧面看庐山是高耸的山峰。远看近看高处低处各不一样。看不清庐山的真正面目，只因为自己身处在庐山之中。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -289,7 +289,7 @@ export const grade4Poems = [
     ],
     translation: "活着就要做人中的豪杰，死了也要成为鬼中的英雄。到今天还在怀念项羽，因为他不肯苟且偷生回到江东。",
     background: 'study',
-    tags: [],
+    tags: ['夏日', '山水', '思乡'],
     difficulty: 1,
   }
 ];

@@ -2,7 +2,7 @@
  * 诗单列表视图
  * 渲染首页搜索栏、进度卡片、筛选器和诗歌卡片网格
  */
-import { allPoems, GradeLabels, StatusLabels, Status, getPoemBgImage } from '../data/index.js';
+import { allPoems, GradeLabels, StatusLabels, Status, getPoemBgImage, getRecommendedTheme, THEMES } from '../data/index.js';
 import { getState, getPoemStatus, getStatusClass, getStatusText, getFilteredPoems } from '../state/app-state.js';
 import { getReviewDuePoems, loadLastViewed } from '../../utils/storage.js';
 import { openDetail } from './poem-detail-view.js';
@@ -35,6 +35,10 @@ export function renderPoemList() {
   const recommendCount = Math.max(0, 3 - duePoems.length - (lastViewedPoem ? 1 : 0)) || 3;
   const recommendations = [...unlearnedPoems].sort(() => Math.random() - 0.5).slice(0, recommendCount);
 
+  // 获取节气/节日专题
+  const recommendedTheme = getRecommendedTheme();
+  const themeBgUrl = getPoemBgImage({ title: recommendedTheme.cover, dynasty: '', author: '' }); // 借用现有生成 URL 函数
+
   container.innerHTML = `
     <!-- 顶部欢迎区 -->
     <div class="welcome-section">
@@ -49,9 +53,19 @@ export function renderPoemList() {
         <div class="wp-label">已掌握</div>
       </div>
     </div>
+    
+    <!-- 专题推荐卡片 -->
+    <div class="theme-banner" id="themeBanner" data-theme-id="${recommendedTheme.id}">
+      <div class="theme-bg" style="background-image: url('${themeBgUrl}')"></div>
+      <div class="theme-content">
+        <h3 class="theme-title">${recommendedTheme.title}</h3>
+        <p class="theme-desc">${recommendedTheme.desc}</p>
+        <span class="theme-action">探索专题诗词 ➔</span>
+      </div>
+    </div>
 
-    <!-- 搜索栏 -->
-    <div class="search-bar">
+    <!-- 今日学习 -->
+    <div class="today-section">
       <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
       </svg>
@@ -85,6 +99,12 @@ export function renderPoemList() {
         ${Object.entries(StatusLabels).map(([key, label]) => `
           <button class="filter-btn status-btn ${state.selectedStatuses.has(key) ? 'active' : ''}"
                   data-status="${key}">${label}</button>
+        `).join('')}
+      </div>
+      <div class="filter-row filter-tags">
+        <button class="filter-btn tag-btn ${state.selectedTag === 'ALL' ? 'active' : ''}" data-tag="ALL">全部主题</button>
+        ${Array.from(new Set(allPoems.flatMap(p => p.tags || []))).filter(Boolean).map(tag => `
+          <button class="filter-btn tag-btn ${state.selectedTag === tag ? 'active' : ''}" data-tag="${tag}">${tag}</button>
         `).join('')}
       </div>
     </div>
@@ -152,15 +172,32 @@ export function renderPoemList() {
     });
   });
 
-  // 绑定诗词卡片点击事件
-  container.addEventListener('click', (e) => {
+  // 绑定标签筛选事件
+  container.querySelectorAll('.tag-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.selectedTag = btn.dataset.tag;
+      renderPoemList();
+    });
+  });
+
+  // 绑定诗词卡片 和 专题卡片点击事件 (使用 onclick 避免跨次渲染事件叠加)
+  container.onclick = (e) => {
+    // 处理诗词卡片点击 (打开详情页)
     const card = e.target.closest('.poem-card, .today-card');
     if (card && !e.target.closest('.fav-btn')) {
       const poemId = parseInt(card.dataset.poemId);
       const poem = allPoems.find(p => p.id === poemId);
       if (poem) openDetail(poem);
+      return;
     }
-  });
+
+    // 处理专题卡片点击 (展示专题浮层)
+    const themeBanner = e.target.closest('.theme-banner');
+    if (themeBanner) {
+      const themeId = themeBanner.dataset.themeId;
+      openThemeOverlay(themeId);
+    }
+  };
 
   // 搜索事件
   const searchInput = container.querySelector('#searchInput');
@@ -236,4 +273,91 @@ function renderTodayCard(poem, tagLabel, tagClass) {
       <div class="card-author">${poem.dynasty ? poem.dynasty + ' · ' : ''}${poem.author}</div>
     </div>
   `;
+}
+
+/**
+ * 打开专题覆盖层
+ * @param {string} themeId - 专题 ID
+ */
+function openThemeOverlay(themeId) {
+  const theme = THEMES.find(t => t.id === themeId);
+  if (!theme) return;
+
+  // 如果已经有专题浮层存在，直接返回，避免多次点击叠加渲染
+  if (document.querySelector('.theme-overlay')) return;
+
+  // 根据 theme.poemIds 筛选得到具体的诗歌列表
+  const themePoems = allPoems.filter(p => theme.poemIds.includes(p.id));
+
+  const overlay = document.createElement('div');
+  overlay.className = 'theme-overlay';
+  
+  const themeBgUrl = getPoemBgImage({ title: theme.cover, dynasty: '', author: '' });
+  
+  overlay.innerHTML = `
+    <div class="theme-overlay-bg" style="background-image: url('${themeBgUrl}')"></div>
+    <div class="theme-overlay-header">
+      <button class="btn-back" id="themeClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </button>
+      <h2>${theme.title}专题</h2>
+    </div>
+    <div class="theme-overlay-content">
+      <div class="theme-hero">
+        <p class="theme-hero-desc">${theme.desc}</p>
+        <span class="theme-hero-count">共 ${themePoems.length} 首</span>
+      </div>
+      <div class="theme-poems-list">
+        ${themePoems.map(poem => {
+          const status = getPoemStatus(poem.id);
+          const state = getState();
+          return `
+            <div class="poem-card" data-poem-id="${poem.id}">
+              <div class="card-bg" style="background-image: url('${getPoemBgImage(poem)}')"></div>
+              <button class="fav-btn ${state.favorites.has(poem.id) ? 'active' : ''}" data-fav-id="${poem.id}">
+                ${state.favorites.has(poem.id) ? '❤' : '♡'}
+              </button>
+              ${status === Status.MASTERED ? `
+                <div class="mastered-badge">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+              ` : ''}
+              <span class="status-tag ${getStatusClass(status)}">${getStatusText(status)}</span>
+              <div class="card-title">${poem.title}</div>
+              <div class="card-author">${poem.dynasty ? poem.dynasty + ' · ' : ''}${poem.author}</div>
+              <div class="card-preview">${poem.content[0]}</div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+
+  // 动画登场
+  requestAnimationFrame(() => {
+    overlay.classList.add('visible');
+  });
+
+  // 绑定事件
+  overlay.querySelector('#themeClose').addEventListener('click', () => {
+    overlay.classList.remove('visible');
+    setTimeout(() => {
+      document.body.removeChild(overlay);
+    }, 300);
+  });
+
+  overlay.querySelector('.theme-poems-list').addEventListener('click', (e) => {
+    const card = e.target.closest('.poem-card');
+    if (card && !e.target.closest('.fav-btn')) {
+      const poemId = parseInt(card.dataset.poemId);
+      const poem = allPoems.find(p => p.id === poemId);
+      if (poem) openDetail(poem);
+    }
+  });
 }

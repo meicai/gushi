@@ -18,7 +18,7 @@ export const grade1Poems = [
     ],
     translation: "春天种下一粒种子，秋天就能收获万颗粮食。天下没有闲置的田地，可是农民还是饿死了。",
     background: 'pastoral',
-    tags: [],
+    tags: ['田园', '爱惜粮食'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade1Poems = [
     ],
     translation: "小孩撑着小船，偷偷地采了白莲花回来。他不懂得隐藏自己的踪迹，水面上浮萍被船划开了一条线。",
     background: 'summer',
-    tags: [],
+    tags: ['夏', '童趣'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const grade1Poems = [
     ],
     translation: "如同碧玉装扮成的柳树高高矗立，万千条柳枝像绿色的丝带垂下来。不知道这细小的柳叶是谁裁出来的，原来是二月的春风像剪刀一样裁剪的。",
     background: 'spring',
-    tags: [],
+    tags: ['咏物', '春'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade1Poems = [
     ],
     translation: "风能吹落秋天的树叶，能催开春天的鲜花。经过江面能掀起千尺巨浪，吹进竹林能让万根竹子倾斜。",
     background: 'autumn',
-    tags: [],
+    tags: ['风', '自然'],
     difficulty: 1,
   },
   {
@@ -90,7 +90,7 @@ export const grade1Poems = [
     ],
     translation: "在松树下问一个小孩子，他说师父到山上采药去了。只知道就在这座大山里，但山中云雾缭绕不知道具体在哪里。",
     background: 'mountains',
-    tags: [],
+    tags: ['隐逸', '山水'],
     difficulty: 1,
   },
   {
@@ -108,7 +108,7 @@ export const grade1Poems = [
     ],
     translation: "小时候不认识月亮，把它叫做白玉盘。又怀疑是瑶台上的仙镜，飞挂在青云的上面。",
     background: 'moonlight',
-    tags: [],
+    tags: ['月', '童趣'],
     difficulty: 1,
   },
   {
@@ -126,7 +126,7 @@ export const grade1Poems = [
     ],
     translation: "鹅鹅鹅，弯曲着脖子对着天空唱歌。白色的羽毛浮在绿色的水面上，红色的脚掌拨动着清澈的水波。",
     background: 'summer',
-    tags: [],
+    tags: ['咏物', '动物'],
     difficulty: 1,
   },
   {
@@ -144,7 +144,7 @@ export const grade1Poems = [
     ],
     translation: "床前有明亮的月光，好像是地上结了一层白霜。抬起头来看天上的明月，低下头来思念自己的家乡。",
     background: 'moonlight',
-    tags: [],
+    tags: ['秋思', '思乡'],
     difficulty: 1,
   },
   {
@@ -162,7 +162,7 @@ export const grade1Poems = [
     ],
     translation: "春天睡得真香不知不觉天已亮了，到处能听到鸟儿啼叫。昨夜又刮风又下雨，不知花被吹落了多少。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '动物', '童趣'],
     difficulty: 1,
   },
   {
@@ -180,7 +180,7 @@ export const grade1Poems = [
     ],
     translation: "农历二月草木生长莺鸟飞翔，堤边的杨柳飘摇在如烟的春色中。小孩子放学回来得早，赶快趁着东风放起了风筝。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '秋思', '边塞'],
     difficulty: 1,
   },
   {
@@ -198,7 +198,7 @@ export const grade1Poems = [
     ],
     translation: "牧童骑在黄牛背上，嘹亮的歌声在林中回荡。忽然想要捕捉树上叫着的知了，就马上停下来闭上嘴巴站在那里。",
     background: 'grassland',
-    tags: [],
+    tags: ['边塞', '动物', '童趣'],
     difficulty: 1,
   },
   {
@@ -216,7 +216,7 @@ export const grade1Poems = [
     ],
     translation: "泉眼悄悄无声是因爱惜细细的水流，树荫映在水面是因为喜欢晴天柔和的风光。小荷叶才露出水面尖尖的角，早有一只蜻蜓站在了上头。",
     background: 'summer',
-    tags: [],
+    tags: ['夏日', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -234,7 +234,7 @@ export const grade1Poems = [
     ],
     translation: "远看高山色彩明亮，走近一听水却没有声音。春天过去了花还在盛开着，人走过来鸟也不受惊吓。原来这是一幅画。",
     background: 'mountains',
-    tags: [],
+    tags: ['春景', '山水', '动物'],
     difficulty: 1,
   },
   {
@@ -252,7 +252,7 @@ export const grade1Poems = [
     ],
     translation: "走出去两三里路，看到一个小村庄有四五户人家。村庄里有六七座亭台，还有许许多多的花。",
     background: 'pastoral',
-    tags: [],
+    tags: ['春景', '思乡', '田园'],
     difficulty: 1,
   },
   {
@@ -273,7 +273,7 @@ export const grade1Poems = [
     ],
     translation: "江南水乡是采莲的好地方，莲叶多么茂盛啊。鱼儿在莲叶间嬉戏，一会儿游到东面，一会儿游到西面，一会儿游到南面，一会儿游到北面。",
     background: 'summer',
-    tags: [],
+    tags: ['夏日', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -291,7 +291,7 @@ export const grade1Poems = [
     ],
     translation: "辽阔的敕勒川在阴山脚下。天空像一顶巨大的帐篷，笼罩着整个原野。天空苍苍茫茫，原野辽阔无垠，风吹过草地低伏下去，就能看到成群的牛羊。",
     background: 'grassland',
-    tags: [],
+    tags: ['春景', '山水', '田园'],
     difficulty: 1,
   },
   {
@@ -309,7 +309,7 @@ export const grade1Poems = [
     ],
     translation: "农民在正午时分顶着烈日锄草，汗珠滴落在禾苗下面的泥土里。谁知道盘子里的饭食，每一粒都饱含着农民的辛苦。",
     background: 'pastoral',
-    tags: [],
+    tags: ['春景', '田园', '爱国'],
     difficulty: 1,
   }
 ];

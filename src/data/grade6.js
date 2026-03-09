@@ -18,7 +18,7 @@ export const grade6Poems = [
     ],
     translation: "中国大地的生机要靠风雷般的变革，万马齐喑的局面实在令人悲哀。我劝天公重新振作精神，不要拘泥于一种规格降下各种人才。",
     background: 'mountains',
-    tags: [],
+    tags: ['边塞', '动物', '爱国'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade6Poems = [
     ],
     translation: "石灰石经过千万次锤打才从深山中开采出来，经受烈火焚烧也觉得很平常。即使被粉碎变成粉末也毫不害怕，只要能把清白留在人世间。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const grade6Poems = [
     ],
     translation: "竹子把根深深地扎进青山的岩石中紧紧咬住不放松，它的根原来就生长在破碎的岩石缝中。经历了千万次的磨炼和打击还是那样坚韧挺拔，不管你从哪个方向刮来的风。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade6Poems = [
     ],
     translation: "墙角有几枝梅花，不畏严寒独自盛开。远远望去就知道那不是雪，因为有一阵阵暗香飘来。",
     background: 'winter',
-    tags: [],
+    tags: ['春景', '冬雪', '边塞'],
     difficulty: 1,
   }
 ];

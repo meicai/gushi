@@ -18,7 +18,7 @@ export const preschoolPoems = [
     ],
     translation: "傍晚时心情不好，便驾着车登上古原。夕阳多么美好，只是已接近黄昏。",
     background: 'autumn',
-    tags: [],
+    tags: ['自然'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const preschoolPoems = [
     ],
     translation: "去年今天在这扇门里，姑娘的脸庞与桃花相映红。今天姑娘不知去了哪里，只有桃花依然在春风中盛开。",
     background: 'spring',
-    tags: [],
+    tags: ['春景'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const preschoolPoems = [
     ],
     translation: "青海湖上的浓云遮暗了雪山，在孤城上远远望着玉门关。在黄沙中经历百战铠甲都磨穿了，不攻破楼兰誓不回还。",
     background: 'frontier',
-    tags: [],
+    tags: ['冬雪', '山水', '送别'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const preschoolPoems = [
     ],
     translation: "山上寺院里的高楼真高啊，好像有一百尺的样子，人在楼上好像一伸手就可以摘下天上的星星。站在这里不敢大声说话，怕惊扰了天上的仙人。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水', '隐逸'],
     difficulty: 1,
   },
   {
@@ -90,7 +90,7 @@ export const preschoolPoems = [
     ],
     translation: "枝条顶端的辛夷花，在山中绽放红色的花萼。山涧口寂静无人，花儿纷纷地开了又落了。",
     background: 'birds',
-    tags: [],
+    tags: ['春景', '山水', '童趣'],
     difficulty: 1,
   },
   {
@@ -108,7 +108,7 @@ export const preschoolPoems = [
     ],
     translation: "想要展开远行的道路，暂借明月的光芒照亮。不如池塘上的流水，它们还能够彼此相忘。",
     background: 'moonlight',
-    tags: [],
+    tags: ['秋思', '山水', '送别'],
     difficulty: 1,
   },
   {
@@ -126,7 +126,7 @@ export const preschoolPoems = [
     ],
     translation: "一条小溪流水满满的，十里之内柳花飘香。不谈论公事闲事，只顾着看水面的光影。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '隐逸'],
     difficulty: 1,
   },
   {
@@ -144,7 +144,7 @@ export const preschoolPoems = [
     ],
     translation: "头上的红冠不用裁剪就天然长成，满身雪白地走过来。平时不敢轻易出声，一叫就让千家万户都打开了门。",
     background: 'birds',
-    tags: [],
+    tags: ['冬雪', '思乡', '边塞'],
     difficulty: 1,
   },
   {
@@ -162,7 +162,7 @@ export const preschoolPoems = [
     ],
     translation: "天下最令人伤心的地方，就是这送别客人的劳劳亭。春风好像也知道离别的痛苦，所以不让柳条变绿。",
     background: 'farewell',
-    tags: [],
+    tags: ['春景', '思乡', '送别'],
     difficulty: 1,
   },
   {
@@ -180,7 +180,7 @@ export const preschoolPoems = [
     ],
     translation: "花开满树一片红艳，花落之后满枝空荡。只剩下花中的花蕊，颜色和之前不一样了。",
     background: 'birds',
-    tags: [],
+    tags: ['春景'],
     difficulty: 1,
   },
   {
@@ -198,7 +198,7 @@ export const preschoolPoems = [
     ],
     translation: "向前看不到古代的圣贤，向后看不到将来的英雄。想到天地是这样无穷无尽，独自一人悲伤地流下眼泪。",
     background: 'mountains',
-    tags: [],
+    tags: ['送别', '边塞'],
     difficulty: 1,
   },
   {
@@ -216,7 +216,7 @@ export const preschoolPoems = [
     ],
     translation: "圆圆的月亮升上了寒冷的天空，人们都说四面八方的月光是一样的。谁知道千里之外，也许正刮风下雨呢。",
     background: 'moonlight',
-    tags: [],
+    tags: ['秋思', '冬雪', '山水'],
     difficulty: 1,
   },
   {
@@ -234,7 +234,7 @@ export const preschoolPoems = [
     ],
     translation: "在花丛中摆上一壶美酒，独自一人饮酒没有人陪伴。举起酒杯邀请明月来共饮，对着月光下的影子就成了三个人。",
     background: 'moonlight',
-    tags: [],
+    tags: ['春景', '秋思', '隐逸'],
     difficulty: 1,
   },
   {
@@ -252,7 +252,7 @@ export const preschoolPoems = [
     ],
     translation: "像花又不是花，像雾又不是雾。半夜到来，天亮就离去。来的时候像春梦一样能有多少时间？去的时候像朝云一样无处寻觅。",
     background: 'birds',
-    tags: [],
+    tags: ['春景'],
     difficulty: 1,
   },
   {
@@ -270,7 +270,7 @@ export const preschoolPoems = [
     ],
     translation: "弟子规是圣人的教训。首先要孝顺父母、尊敬兄长，其次要谨慎和诚信。广泛地爱护众人，亲近有仁德的人。如果还有余力就去学习知识。",
     background: 'study',
-    tags: [],
+    tags: ['哲理'],
     difficulty: 1,
   }
 ];

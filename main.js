@@ -80,3 +80,12 @@ if (document.readyState === 'loading') {
 } else {
   init();
 }
+
+// 注册 Service Worker，利用 Vite 提供的 BASE_URL 确保路径在不同环境下均有效
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(err => {
+      console.warn('ServiceWorker 注册失败: ', err);
+    });
+  });
+}

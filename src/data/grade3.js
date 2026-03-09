@@ -18,7 +18,7 @@ export const grade3Poems = [
     ],
     translation: "慈爱的母亲手中拿着针线，为即将远行的儿子缝制衣裳。临行前一针一针密密地缝着，担心儿子很晚很晚才能回来。",
     background: 'study',
-    tags: [],
+    tags: ['送别', '边塞', '童趣'],
     difficulty: 1,
   },
   {
@@ -36,7 +36,7 @@ export const grade3Poems = [
     ],
     translation: "我最喜欢那幽静的小草在溪涧边生长，上面有黄莺在树丛深处鸣叫。春潮带着雨水傍晚来得很急，荒野的渡口没有人渡河，小船独自横在水面上。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -54,7 +54,7 @@ export const grade3Poems = [
     ],
     translation: "独自一人在他乡做外来的客人，每当到了过节的时候格外思念家乡的亲人。遥想兄弟们在登高的地方，都插上了茱萸就少了我一个人。",
     background: 'autumn',
-    tags: [],
+    tags: ['秋思', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -72,7 +72,7 @@ export const grade3Poems = [
     ],
     translation: "萧萧的秋风吹动梧桐树叶送来阵阵寒意，江上的秋风触动了游子的思乡之情。知道有小孩在挑逗蟋蟀玩，因为深夜篱笆旁还有一盏灯亮着。",
     background: 'autumn',
-    tags: [],
+    tags: ['秋思', '冬雪', '山水'],
     difficulty: 1,
   },
   {
@@ -90,7 +90,7 @@ export const grade3Poems = [
     ],
     translation: "晴天时西湖水面波光粼粼非常好看，雨天时山色朦胧也很奇妙。如果把西湖比作美女西施的话，不管是淡妆还是浓抹都很合适。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水'],
     difficulty: 1,
   },
   {
@@ -108,7 +108,7 @@ export const grade3Poems = [
     ],
     translation: "天门山从中间断裂是楚江把它冲开的，碧绿的江水向东流到这里开始转弯。两岸的青山相互对峙，一叶孤帆从太阳升起的方向驶来。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水', '边塞'],
     difficulty: 1,
   },
   {
@@ -126,7 +126,7 @@ export const grade3Poems = [
     ],
     translation: "清晨告别白帝城那彩云缭绕的地方，千里之遥的江陵一天就到了。两岸猿猴的叫声不断，轻快的小船已经驶过了万重青山。",
     background: 'mountains',
-    tags: [],
+    tags: ['山水', '送别'],
     difficulty: 1,
   },
   {
@@ -144,7 +144,7 @@ export const grade3Poems = [
     ],
     translation: "采莲少女的罗裙和荷叶一个颜色，荷花正好映照着少女的脸庞两边开放。混入池塘中看不见她们的身影，听到歌声才发觉有人来了。",
     background: 'summer',
-    tags: [],
+    tags: ['春景', '夏日', '边塞'],
     difficulty: 1,
   },
   {
@@ -162,7 +162,7 @@ export const grade3Poems = [
     ],
     translation: "春天的阳光照耀着江山多么秀丽，春风送来花草的芳香。泥土湿润了燕子飞来飞去，沙滩温暖了鸳鸯在上面睡觉。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '动物'],
     difficulty: 1,
   },
   {
@@ -180,7 +180,7 @@ export const grade3Poems = [
     ],
     translation: "竹林外两三枝桃花初放，鸭子在水中最先知道春天来了江水变暖了。蒌蒿满地芦芽刚刚长出来，正是河豚要逆流而上的季节。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水', '隐逸'],
     difficulty: 1,
   },
   {
@@ -198,7 +198,7 @@ export const grade3Poems = [
     ],
     translation: "千里黄云遮蔽了天空，太阳也显得昏暗了，北风吹着大雁雪花纷飞。不要担心前方的路上没有知己朋友，天下谁人不认识你呢？",
     background: 'winter',
-    tags: [],
+    tags: ['春景', '秋思', '冬雪'],
     difficulty: 1,
   },
   {
@@ -216,7 +216,7 @@ export const grade3Poems = [
     ],
     translation: "好雨知道下雨的时节，正是在春天植物萌发生长的时候。雨随着春风在夜里悄悄落下，无声地滋润着万物。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '隐逸'],
     difficulty: 1,
   },
   {
@@ -234,7 +234,7 @@ export const grade3Poems = [
     ],
     translation: "黄四娘家的小路旁开满了鲜花，千朵万朵花儿把枝条都压低了。留恋花间的蝴蝶不时地翩翩起舞，自由自在的黄莺恰恰欢快地鸣叫。",
     background: 'birds',
-    tags: [],
+    tags: ['春景', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -252,7 +252,7 @@ export const grade3Poems = [
     ],
     translation: "皇城的大街上细雨如酥油般润泽，小草远远看去绿绿的，近看却几乎看不出来。这是一年中最美好的时节，远远胜过京城柳絮如烟的暮春。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '山水'],
     difficulty: 1,
   },
   {
@@ -270,7 +270,7 @@ export const grade3Poems = [
     ],
     translation: "昏暗的树林中草突然被风吹动，将军在夜里拉弓射箭。第二天天亮去寻找白色的箭羽，发现箭已深深射入石棱中。",
     background: 'frontier',
-    tags: [],
+    tags: ['春景', '边塞'],
     difficulty: 1,
   },
   {
@@ -288,7 +288,7 @@ export const grade3Poems = [
     ],
     translation: "九曲黄河从遥远的地方携带着万里黄沙奔腾而来，浪花淘洗着大风簸动来自天边。如今可以沿着黄河直上银河去，一同到牛郎织女的家里做客。",
     background: 'mountains',
-    tags: [],
+    tags: ['春景', '山水', '思乡'],
     difficulty: 1,
   },
   {
@@ -306,7 +306,7 @@ export const grade3Poems = [
     ],
     translation: "清明节这天下着细雨，路上行走的人好像失了魂魄一样伤感。请问哪里有酒家可以歇脚？牧童远远地指向杏花深处的村庄。",
     background: 'spring',
-    tags: [],
+    tags: ['春景', '思乡', '送别'],
     difficulty: 1,
   },
   {
@@ -324,7 +324,7 @@ export const grade3Poems = [
     ],
     translation: "用精美的夜光杯盛着葡萄美酒，正要畅饮时琵琶声又催人出发了。即使醉倒在沙场上你也不要笑话我，自古以来出征打仗有几人能活着回来？",
     background: 'frontier',
-    tags: [],
+    tags: ['边塞', '动物', '爱国'],
     difficulty: 1,
   },
   {
@@ -344,7 +344,7 @@ export const grade3Poems = [
     ],
     translation: "园中的葵菜青青郁郁，清晨的露水等待着太阳出来就会蒸发。百川东流汇入大海，什么时候才能再向西流回来呢？年少时不努力学习，到老了只能空自悲伤。",
     background: 'pastoral',
-    tags: [],
+    tags: ['山水', '送别', '哲理'],
     difficulty: 1,
   }
 ];
